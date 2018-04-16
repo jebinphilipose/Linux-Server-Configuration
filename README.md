@@ -43,7 +43,7 @@ Things required for this project:
      $ sudo apt-get upgrade
     ```
 
-### 3. Changing the default SSH port
+### 3. Changing the default SSH port | Disable login for `root` user
 
 * Configuring the server instance
     
@@ -52,8 +52,10 @@ Things required for this project:
        ```
        $ sudo nano /etc/ssh/sshd_config
        ```
-    2. Change the line `Port 22` to `Port 2200`, save and exit the file
-    3. Run the following command:
+    2. Change the line `Port 22` to `Port 2200`
+    3. Change the line `PermitRootLogin prohibit-password` to `PermitRootLogin no`
+    4. Save and exit the file
+    5. Run the following command:
 
        ```
        $ sudo service sshd restart
