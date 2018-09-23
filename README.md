@@ -7,13 +7,13 @@
 The server used is a Google Cloud Compute Engine instance.
 
 ---
-* **Public IP Address: 35.196.96.43**
+* **Public IP Address: 35.247.82.229**
 
 * **SSH Port: 2200**
 
-* **Live version of the WebApp:** [Food Catalog](http://35.196.96.43.xip.io)
+* **Live version of the WebApp:** [Food Catalog](http://35.247.82.229.xip.io)
 
-    > Note: To access the live WebApp with Google Authentication use **http://35.196.96.43.xip.io**
+    > Note: To access the live WebApp with Google Authentication use **http://35.247.82.229.xip.io**
 
 ---
 
@@ -132,7 +132,7 @@ Things required for this project:
 * Run the command:
 
     ```
-    $ ssh -i <full_path_of_pub_file> grader@35.196.96.43 -p 2200
+    $ ssh -i <full_path_of_pub_file> grader@35.247.82.229 -p 2200
     ```
 
 * Enter the passphrase for the key
@@ -285,7 +285,7 @@ See this [link](https://www.digitalocean.com/community/tutorials/how-to-secure-p
 
     ```
     <VirtualHost *:80>
-      ServerName 35.196.96.43
+      ServerName 35.247.82.229
       ServerAdmin jebinphilip24@gmail.com
       WSGIScriptAlias / /var/www/catalog/catalog.wsgi
       <Directory /var/www/catalog/>
@@ -311,7 +311,7 @@ See this [link](https://www.digitalocean.com/community/tutorials/how-to-secure-p
     $ sudo apache2ctl restart
     ```
 
-* Access the WebApp in your browser: [Food Catalog](http://35.196.96.43.xip.io)
+* Access the WebApp in your browser: [Food Catalog](http://35.247.82.229.xip.io)
 
 ### 15. Automatically manage package updates
 
